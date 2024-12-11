@@ -4,12 +4,10 @@ import PokemonCard from "./components/PokemonCard";
 function App() {
   return (
     <div>
-      <PokemonCard pokemon={pokemonList[0]} />
+      <PokemonCard name={pokemonList[0].name} imgSrc={pokemonList[0].imgSrc} />
     </div>
   );
 }
-
-export default App;
 
 const pokemonList = [
   {
@@ -22,3 +20,5 @@ const pokemonList = [
     imgSrc: null,
   },
 ];
+
+export default App;
