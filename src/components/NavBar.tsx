@@ -15,7 +15,12 @@ function NavBar({ setPokemonIndex, pokemonList }: NavBarProps) {
         <button
           type="button"
           key={pokemon.name}
-          onClick={() => setPokemonIndex(index)}
+          onClick={() => {
+            setPokemonIndex(index);
+            if (pokemon.name === "pikachu") {
+              alert("pika pikachu !!!");
+            }
+          }}
         >
           {pokemon.name}
         </button>
